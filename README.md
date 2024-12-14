@@ -3,42 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bounce House Rental Cost Calculator</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 20px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-    }
-    table, th, td {
-      border: 1px solid #ddd;
-    }
-    th, td {
-      padding: 10px;
-      text-align: left;
-    }
-    th {
-      background-color: #f4f4f4;
-    }
-    details {
-      margin-bottom: 10px;
-    }
-    details summary {
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .code-block {
-      background-color: #f4f4f4;
-      border-left: 4px solid #ccc;
-      padding: 10px;
-      font-family: Consolas, "Courier New", monospace;
-    }
-  </style>
 </head>
 <body>
 
@@ -173,3 +137,39 @@
 <section id="usage">
   <h2>Usage 🚀</h2>
   <p><strong>1. Compile the Program:</strong></p>
+  <div class="code-block">gcc -o bounce_house_calculator bounce_house_calculator.c</div>
+  <p><strong>2. Run the Program:</strong></p>
+  <div class="code-block">./bounce_house_calculator</div>
+  <p><strong>3. Input Required:</strong></p>
+  <ul>
+    <li>Bounce house selection (<code>1-4</code>)</li>
+    <li>Number of days (<code>>= 0</code>)</li>
+    <li>Number of hours (<code>0-23</code>)</li>
+  </ul>
+</section>
+
+<hr>
+
+<section id="example-output">
+  <h2>Example Output 🎉</h2>
+  <h3>Valid Input</h3>
+  <div class="code-block">
+    Enter the bounce house selection (1-4): 2<br>
+    Enter the number of days: 1<br>
+    Enter the number of hours: 5<br><br>
+    The total charge for renting the Gigantic Jump is $132.
+  </div>
+  <h3>Invalid Selection</h3>
+  <div class="code-block">
+    Enter the bounce house selection (1-4): 5<br>
+    Invalid selection. Select from 1 to 4.
+  </div>
+  <h3>Invalid Hours</h3>
+  <div class="code-block">
+    Enter the number of hours: 25<br>
+    Invalid hours.
+  </div>
+</section>
+
+</body>
+</html>
